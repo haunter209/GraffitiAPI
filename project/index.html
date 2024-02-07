@@ -8,14 +8,34 @@
     <link rel="stylesheet" href="CSS/design.css">
 
 </head>
-<body>
-<script src="JS/actualcode.js">
 
-    
-</script>
-    <h1>
+<body style="background-color: black;" >
+
+
+ 
+    <div class="container">
+
+        <h1 style="color: #149414;">
+            Hello
+        </h1>
+    </div>
+    <h1 style="color: #149414;">
+
         Hello
     </h1>
+    <input style="color: #149414;" type="text" id="mytext">
     
+    <button onclick="myFunction()">Print the value</button>
+
+    <p style="color: #149414;" id="demo"></p>
+    <script>
+        function myFunction() {
+          var x = document.getElementById("mytext").value;
+          document.getElementById("demo").innerHTML = x;
+        }
+     </script>
+
+
+
 </body>
 </html>
